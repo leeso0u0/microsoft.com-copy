@@ -1,0 +1,12 @@
+* {
+	padding : 0px;
+	margin  : 0px;
+	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+ul {
+	list-style: none;
+	display : inline;
+}
+.secondMenu {display: none;}
+.thirdMenu {display: none;}
