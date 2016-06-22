@@ -3,10 +3,115 @@
 	margin  : 0px;
 	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
-
 ul {
 	list-style: none;
-	display : inline;
 }
+
+nav {
+	display : inline-block;
+	position : relative;
+	height : 50px;
+}
+#home {
+	position : absolute;
+	left : 65px;
+	top : 13px;
+	width : 108px;
+}
+.firstMenu {
+	position : relative;
+	left : 200px;
+	top : 17px;
+}
+.firstMenu li{
+	display: inline;
+	width: 150px;
+	padding : 30px 30px 15px 30px ;
+	-webkit-transition : all 0.5s ease;
+}
+.firstMenu li:hover{
+	background-color : darkgray;
+}
+#sidebar {
+	position : relative;
+	left : 900px;
+	display:inline-block;
+	bottom: 5px;
+}
+#main{
+	position: relative;
+}
+#slide{
+	position : relative;
+}
+#slide img{
+	position:absolute;
+	width : 100%;
+}
+#slidetext {
+	position:absolute;
+	text-align : center;
+	top : 26em;
+	left: 38em;
+}
+#slidetext p{
+	font-size : 30px;
+	font-weight: normal;
+	margin-bottom: 20px;
+}
+#slidetext a{
+	font-size: 20px;
+}
+section {
+	position : relative;
+	display: flex;
+	top:600px;
+	left : 45px;
+	margin : 30px;
+}
+.banner {
+	width : 250px;
+	text-align: center;
+	margin:15px;
+}
+.banner img{
+	width : 100%;
+}
+.banner h3{
+	font-size : 23px;
+	font-weight: lighter;
+	margin : 10px;
+}
+.banner p{
+	font-size : 17px;
+	font-weight: lighter;
+	margin:10px;
+}
+footer {
+	position : relative;
+	top : 600px;
+	height: 300px;
+	background-color: darkgray;
+}
+#followSNS{
+	padding-left : 100px;
+	background-color : gray;
+	height: 50px;
+}
+#followSNS span{
+	font-size: 20px;
+}
+#footermenu {
+	left : 100px;
+	position: absolute;
+}
+#footermenu li{
+	display: inline-block;
+	margin-right: 20px;
+}
+.moreDetail {
+	width : 150px;
+}
+#data {display: none;}
 .secondMenu {display: none;}
 .thirdMenu {display: none;}
