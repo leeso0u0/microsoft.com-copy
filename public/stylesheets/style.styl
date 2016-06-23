@@ -1,5 +1,156 @@
-body
-  padding: 50px
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif
-a
-  color: #00B7FF
+
+* {
+	padding : 0px;
+	margin  : 0px;
+	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+ul {
+	list-style: none;
+}
+
+nav {
+	position : relative;
+	
+	#home {
+		position : absolute;
+		left : 65px;
+		top : 13px;
+		width : 108px;
+	}
+	
+	.firstMenu {
+		position : relative;
+		left : 200px;
+		top : 17px;
+			li{
+				display: inline;
+				width: 150px;
+				padding : 30px 30px 15px 30px ;
+				-webkit-transition : all 0.3s ease;
+			}
+			li:hover{
+				background-color : darkgray;
+			}
+	}
+	
+	#sidebar {
+		position : relative;
+		left : 800px;
+		display:inline-block;
+		bottom: 5px;
+		
+		input{
+			width:250px;
+			height:30px;
+		}
+	}
+}
+#main{
+	position: relative;
+	#slide{
+		img{
+				position:absolute;
+				top : -2em;
+				width : 100%;
+			}
+	}
+	#slidetext {
+		position:absolute;
+		text-align : center;
+		top : 22em;
+		left: 38%;
+		p{
+			font-size : 30px;
+			font-weight: lighter;
+			margin-bottom: 20px;
+		}
+		a{
+			font-size: 20px;
+			font-weight: lighter;
+		}
+	}
+	section {
+		position : relative;
+		display: flex;
+		top:500px;
+		left : 45px;
+		margin : 30px;
+	}
+	.banner {
+		width : 250px;
+		text-align: center;
+		margin:15px;
+
+	 	img{
+			width : 100%;
+		}
+		h3{
+			font-size : 23px;
+			font-weight: lighter;
+			margin : 10px;
+		}
+		p{
+			font-size : 17px;
+			font-weight: lighter;
+			margin:10px;
+		}
+	}
+}
+footer {
+	position : relative;
+	top : 600px;
+	height: 400px;
+	width : 100%
+	background-color: darkgray;
+
+	#followSNS{
+		position : absolute;
+		padding-left : 100px;
+		background-color : gray;
+		height: 50px;
+		width : 100%;
+		
+		#followtext{
+			font-size: 20px;
+			display : inline;
+		}
+		img {
+			margin-top : 5px;
+		}
+	}
+	#footermenu {
+		left : 100px;
+		position: absolute;
+		display: flex;
+		height:200px;
+		width : 100px;
+		top:5em;
+		
+		li{
+			font-size : 16px
+			margin: 5px 20px 10px 0px;
+		}
+		.moreDetail {
+			width : 150px;
+			a {
+				font-size : 12px;
+			}
+		}
+	}
+	#data {
+		position : absolute;
+		top : 20em;
+		left:100px
+		li {
+			display: inline;
+			margin-right : 20px;
+			font-size : 12px;
+
+		}
+		li:first-child {
+			margin-right : 250px;
+		}
+	}
+}
+.secondMenu {display: none;}
+.thirdMenu {display: none;}
