@@ -1,6 +1,6 @@
 * {
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 ul {
@@ -31,13 +31,28 @@ nav .firstMenu li:hover {
 }
 nav #sidebar {
   position: relative;
-  left: 800px;
-  display: inline-block;
+  left: 890px;
+  display: inline;
   bottom: 5px;
 }
-nav #sidebar input {
+nav #sidebar form {
+  display: inline;
+}
+nav #sidebar form #textarea {
+  position: relative;
+  padding-left: 15px;
   width: 250px;
   height: 30px;
+}
+nav #sidebar form #btn {
+  postion: absolute;
+  right: 10px;
+}
+nav #sidebar span {
+  display: inline;
+  font-size: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 #main {
   position: relative;

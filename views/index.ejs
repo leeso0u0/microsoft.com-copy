@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title><%= title %></title>
-	<link rel='stylesheet' href='/stylesheets/style.css' />
+	<link rel="stylesheet" href="/stylesheets/style.css" />
 </head>
 <body>
 	<nav>
@@ -119,8 +119,10 @@
 			<li>지원</li>
 		</ul>
 		<div id="sidebar">
-			<input type="text" alt="Microsoft.com 검색"> 
-			<button>검색</button>				
+			<form>
+				<input type="text" id ="textarea" alt="검색" value = "Microsoft.com 검색"> 
+				<input type="button" id ="btn" alt="버튼">		
+			</form>		
 			<span>쇼핑카트</span>
 			<span>로그인</span>
 		</div>
