@@ -1,103 +1,132 @@
-*
+body
 	padding 0
 	margin 0
-	font 14px "Lucida Grande", Helvetica, Arial, sans-serif
-
+	font-family 'Malgun Gothic','Gulim'
 ul
 	list-style none
 
 nav
 	#home
-		left 65px
-		top 13px
+		float left
 		width 108px
+		margin-top 14px
+		margin-left 66px
 		
 	.firstMenu
-		left 200px
-		top 17px
-		
+		float left
+		display inline-block
 		li
-			display inline
-			width 150px
-			padding 30px 30px 15px 30px
+			display inline-block
+			padding-left 40px
 			-webkit-transition all 0.3s ease
 			
 			&:hover
-				background-color darkgray
-
-	#sidebar 
-		left 890px
-		display inline
-		bottom 5px
+				background-color gray
+		li:first-child
+			padding-left 10px		
+	#sidebar
+		float right
+		margin-right 70px
+		margin-top 7px
 		
 		form
 			display inline
-			postion relative
+			position relative
 			
-			#textarea 
-			padding-left 15px
-			width 250px
-			height 30px
+			#textarea
+				padding-left 15px
+				width 250px
+				height 30px
+				font-size 15px
 			
 			#btn 
-			postion absolute
-			right   10px
+				position absolute
+				right 10px
+				top 2px
+				width 20px
 			
-		span 
+		span
 			display inline
 			font-size 10px
 			margin-left 10px
 			margin-right 10px
-		
+	
 #main
+	clear both
 	#slide
+		position relative
 		img
 			top -2em
 			width 100%
-	
-	#slidetext 
-		text-align center
-		top 22em
-		left 38%
 		
-		p
-			font-size 30px
-			font-weight lighter
-			margin-bottom 20px
+		#slidetext
+			position absolute
+			text-align center
+			top 22em
+			left 32%
+			
+			p
+				font-size 30px
+				font-weight lighter
+				margin-bottom 20px
+			
+			a
+				font-size 20px
+				font-weight lighter
 		
-		a
-			font-size 20px
-			font-weight lighter
-
-	section 
-		display flex
-		top 500px
-		left 45px
-		margin 30px
-	
-	.banner 
-		width 250px
-		text-align center
-		margin 15px
-
-	 	img
+	#slide2
+		position relative
+		img
+			top -2em
 			width 100%
 		
-		h3
-			font-size 23px
-			font-weight lighter
-			margin 10px
+		#sildetext2
+			position absolute
+			top 10em
+			left 5%
+			
+			p
+				font-size 30px
+				font-weight lighter
+				margin-bottom 20px
+				
+			#detail
+				font-size 17px
+				font-weight lighter
+				
+			a
+				font-size 17px
+				font-weight lighter
+	h2 
+		text-align center
+	section 
+		display flex
+		margin 0 auto
+		clear both
 		
-		p
-			font-size 17px
-			font-weight lighter
-			margin 10px
-		
+		.banner 
+			width 250px
+			text-align center
+			margin 30px 0px 30px 65px
+
+		 	img
+				width 100%
+			
+			h3
+				font-size 23px
+				font-weight lighter
+				margin 10px
+			
+			p
+				font-size 17px
+				font-weight lighter
+				margin 10px
+			
 footer 
-	top 600px
-	height 400px
 	width 100%
+	height 350px
 	background-color darkgray
+	float left
 
 	#followSNS
 		padding-left 100px
@@ -109,39 +138,29 @@ footer
 			font-size 20px
 			display inline
 		
-		img 
-			margin-top 5px
-		
 	#footermenu 
-		left 100px
+		clear both
 		display flex
-		height 200px
-		width 100px
-		top 5em
 		
 		li
 			font-size 16px
-			margin 5px 20px 10px 0px
-		
-		.moreDetail 
-			width 150px
-			a
-				font-size 12px
+			.moreDetail 
+				width 150px
 			
-		
+			a 
+				font-size 12px
 	
 	#data 
 		top 20em
 		left 100px
+		
 		li 
 			display inline
 			margin-right 20px
 			font-size 12px
 
-		
-		li first-child 
-			margin-right 250px
-
+			&:first-child
+				margin-right 250px
 
 .secondMenu
 	display none
