@@ -61,7 +61,6 @@ nav #sidebar span {
   position: relative;
 }
 #main #slide img {
-  top: -2em;
   width: 100%;
 }
 #main #slide #slidetext {
@@ -131,37 +130,41 @@ nav #sidebar span {
   margin: 10px;
 }
 footer {
+  clear: both;
   width: 100%;
   height: 350px;
   background-color: #a9a9a9;
   float: left;
 }
 footer #followSNS {
-  padding-left: 100px;
+  padding-left: 90px;
   background-color: #808080;
   height: 50px;
-  width: 100%;
 }
-footer #followSNS #followtext {
+footer #followSNS span {
   font-size: 20px;
-  display: inline;
+  display: inline-block;
 }
 footer #footermenu {
-  clear: both;
   display: flex;
+  text-align: center;
 }
-footer #footermenu li {
-  font-size: 16px;
+footer #footermenu .footerMenuBlock {
+  text-align: left;
+  margin-left: 80px;
 }
-footer #footermenu li .moreDetail {
-  width: 150px;
+footer #footermenu .footerMenuBlock ul {
+  margin-left: -40px;
 }
-footer #footermenu li a {
+footer #footermenu .footerMenuBlock ul li {
+  margin-top: 10px;
   font-size: 12px;
 }
+footer #footermenu .footerMenuBlock:first-child {
+  margin-left: 50px;
+}
 footer #data {
-  top: 20em;
-  left: 100px;
+  margin-top: 50px;
 }
 footer #data li {
   display: inline;
@@ -169,7 +172,8 @@ footer #data li {
   font-size: 12px;
 }
 footer #data li:first-child {
-  margin-right: 250px;
+  margin-left: 50px;
+  margin-right: 300px;
 }
 .secondMenu {
   display: none;

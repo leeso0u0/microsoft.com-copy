@@ -56,7 +56,6 @@ nav
 	#slide
 		position relative
 		img
-			top -2em
 			width 100%
 		
 		#slidetext
@@ -123,44 +122,45 @@ nav
 				margin 10px
 			
 footer 
+	clear both
 	width 100%
 	height 350px
 	background-color darkgray
 	float left
 
 	#followSNS
-		padding-left 100px
+		padding-left 90px
 		background-color gray
 		height 50px
-		width 100%
-		
-		#followtext
+
+		span
 			font-size 20px
-			display inline
-		
+			display inline-block
+
 	#footermenu 
-		clear both
 		display flex
-		
-		li
-			font-size 16px
-			.moreDetail 
-				width 150px
-			
-			a 
-				font-size 12px
-	
+		text-align center
+		.footerMenuBlock
+			text-align left
+			margin-left 80px
+			ul 
+				margin-left -40px
+				li
+					margin-top 10px
+					font-size 12px
+			&:first-child
+				margin-left 50px			
+				
 	#data 
-		top 20em
-		left 100px
-		
+		margin-top 50px
 		li 
 			display inline
 			margin-right 20px
 			font-size 12px
 
 			&:first-child
-				margin-right 250px
+				margin-left 50px
+				margin-right 300px
 
 .secondMenu
 	display none

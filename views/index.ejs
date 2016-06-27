@@ -3,6 +3,17 @@
 <head>
 	<title><%= title %></title>
 	<link rel="stylesheet" href="/stylesheets/style.css" />
+	<!-- jQuery library (served from Google) -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<!-- bxSlider Javascript file -->
+	<script src="bxslider/jquery.bxslider.min.js"></script>
+	<!-- bxSlider CSS file -->
+	<link href="bxslider/jquery.bxslider.css" rel="stylesheet" />
+	<script>
+		$(document).ready(function(){
+  			$('.bxslider').bxSlider();
+		});
+	</script>
 </head>
 <body>
 	<nav>
@@ -130,8 +141,15 @@
 
 	<div id="main">
 		<article id = "slide">
-			<img src= "/images/Srfc_Pro4BG_1006_1920x720_EN_US.jpg" alt="surface">
-			<div id ="slidetext">
+			<ul class="bxslider">
+			  <li>
+			  	<img src= "/images/Srfc_Pro4BG_1006_1920x720_EN_US.jpg" alt="surface" />
+			</li>
+			  <li>
+			  	<img src ="images/Ofc_Mac_BG_0215_1920x720_EN_US.jpg" alt="appstore">
+			  </li>
+			</ul>	
+				<div id ="slidetext">
 				<p>Surface Pro 4. 노트북 그 이상의 태블릿.</p>
 				<a hef ="#">자세한 내용 > &nbsp;&nbsp;&nbsp;&nbsp;지금 구매하기 ></a>
 			</div>
@@ -202,13 +220,13 @@
 
 	<footer>
 		<div id="followSNS"> 
-			<p id="followtext">Microsoft 팔로우</p>
+			<span>Microsoft 팔로우</span>
 			<img src="/images/facebook.png">
 			<img src="/images/twitter.png">
 		</div>
 		<ul id="footermenu">
-			<li>자세히 보기
-				<ul class="moreDetail">
+			<li class="footerMenuBlock">자세히 보기
+				<ul>
 					<li><a href="#">Windows</a></li>
 					<li><a href="#">Office</a></li>
 					<li><a href="#">Skype</a></li>
@@ -217,23 +235,23 @@
 					<li><a href="#">Msn</a></li>
 				</ul>
 			</li>
-			<li>장치
-				<ul class="moreDetail">
+			<li class="footerMenuBlock">장치
+				<ul>
 					<li><a href="#">Microsoft Surface</a></li>
 					<li><a href="#">Xbox</a></li>						
 					<li><a href="#">Microsoft Lumia</a></li>
 				</ul>
 			</li>
-			<li>Microsoft 스토어
-				<ul class="moreDetail">
+			<li class="footerMenuBlock">Microsoft 스토어
+				<ul>
 					<li><a href="#">내 계정</a></li>
 					<li><a href="#">주문 추적</a></li>
 					<li><a href="#">반품/환불</a></li>
 					<li><a href="#">판매 및 지원</a></li>
 				</ul>
 			</li>
-			<li>다운로드
-				<ul class="moreDetail">
+			<li class="footerMenuBlock">다운로드
+				<ul>
 					<li><a href="#">다운로드 센터</a></li>
 					<li><a href="#">Windows용 다운로드</a></li>
 					<li><a href="#">Windows 10 Apps</a></li>
@@ -241,13 +259,13 @@
 					<li><a href="#">Internet Explorer</a></li>
 				</ul>
 			</li>
-			<li>가치
-				<ul class="moreDetail">
+			<li class="footerMenuBlock">가치
+				<ul>
 					<li><a href="#">Microsoft의 개인정보</a></li>
 				</ul>
 			</li>
-			<li>회사
-				<ul class="moreDetail">
+			<li class="footerMenuBlock">회사
+				<ul>
 					<li><a href="#">인재채용</a></li>
 					<li><a href="#">Microsoft</a></li>
 					<li><a href="#">뉴스 센터</a></li>
